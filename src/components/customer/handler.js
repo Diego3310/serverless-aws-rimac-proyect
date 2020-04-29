@@ -30,7 +30,7 @@ module.exports.customers = (event, context, callback) => {
       break;
     }
     default: {
-      return resp.sendMessage(405, { error: "Method Not Allowed" })
+      callback(null, resp.sendMessage(405, {error:"Method Not Allowed"}))
     }
   }
 
