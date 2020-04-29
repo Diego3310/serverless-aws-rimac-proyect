@@ -1,0 +1,49 @@
+#set($inputRoot = $input.path('$'))
+      {   
+          "cantidad": $inputRoot.count,
+          "resultados": [
+              #foreach ($people in $inputRoot.results)
+                
+                #if( $foreach.hasNext )
+                  {
+                  "nombre": "$people.name",
+                  "altura": "$people.height",
+                  "masa"  :  "$people.mass",
+                  "colorCabello" : "$people.hair_color",
+                  "colorPiel":  "$people.skin_color",
+                  "colorOjo" : "$people.eye_color",
+                  "añoNacimiento" : "$people.birth_year",
+                  "sexo" : "$people.gender",
+                  "mundoNatal":"$people.homeworld",
+                  "peliculas": $people.films,
+                  "especies":  $people.species,
+                  "vehiculos": $people.vehicles,
+                  "naves":     $people.starships,
+                  "fechaCreacion":"$people.created",
+                  "fechaModificacion":"$people.edited",
+                  "enlace":"$people.url"
+                  },
+                #else
+                  {
+                      "nombre": "$people.name",
+                      "altura": "$people.height",
+                      "masa"  :  "$people.mass",
+                      "colorCabello" : "$people.hair_color",
+                      "colorPiel":  "$people.skin_color",
+                      "colorOjo" : "$people.eye_color",
+                      "añoNacimiento" : "$people.birth_year",
+                      "sexo" : "$people.gender",
+                      "mundoNatal":"$people.homeworld",
+                      "peliculas": $people.films,
+                      "especies":  $people.species,
+                      "vehiculos": $people.vehicles,
+                      "naves":     $people.starships,
+                      "fechaCreacion":"$people.created",
+                      "fechaModificacion":"$people.edited",
+                      "enlace":"$people.url"
+                  }
+                #end
+              
+              #end
+          ]
+}

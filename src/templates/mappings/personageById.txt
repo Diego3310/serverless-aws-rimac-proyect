@@ -1,0 +1,20 @@
+#set($inputRoot = $input.path('$'))
+{
+    "nombre": "$inputRoot.name",
+    "altura": "$inputRoot.height",
+    "masa"  :  "$inputRoot.mass",
+    "colorCabello" : "$inputRoot.hair_color",
+    "colorPiel":  "$inputRoot.skin_color",
+    "colorOjo" : "$inputRoot.eye_color",
+    "añoNacimiento" : "$inputRoot.birth_year",
+    "sexo" : "$inputRoot.gender",
+    "mundoNatal":"$inputRoot.homeworld",
+    "peliculas": $inputRoot.films,
+    "especies":  $inputRoot.species,
+    "vehiculos": $inputRoot.vehicles,
+    "naves":     $inputRoot.starships,
+    "fechaCreacion":"$inputRoot.created",
+    "fechaModificacion":"$inputRoot.edited",
+    "enlace":"$inputRoot.url"
+  
+}

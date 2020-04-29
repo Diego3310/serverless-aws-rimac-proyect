@@ -1,0 +1,37 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Customer Schema",
+    "required": [
+        "name",
+        "email",
+        "phone",
+        "address"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "title": "Nombre del cliente",
+            "default": ""
+        },
+        "email": {
+            "type": "string",
+            "title": "Email del cliente",
+            "default": ""
+        },
+        "phone": {
+            "type": "string",
+            "title": "Celular del cliente",
+            "default": ""
+        },
+        "age": {
+            "type": "integer",
+            "title": "Edad del cliente"
+        },
+        "address": {
+            "type": "string",
+            "title": "Dirección del cliente"
+        }
+    }
+}

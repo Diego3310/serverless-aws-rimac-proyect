@@ -1,0 +1,18 @@
+{
+  "name": "aws-lambda-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.664.0",
+    "axios": "^0.19.2",
+    "uuid": "^7.0.3"
+  }
+}
